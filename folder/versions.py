@@ -55,13 +55,13 @@ def MerryChristmas_v3():
       colorMerry = colored(merry, color='red', attrs=['bold'])
       colorChristmas = colored(christmas, color='green', attrs=['bold'])
 
-      for i in colorMerry:
+      for i in colorMerry: #for loop change. i will be each character that makes up "Merry".
          print(colored(i, color='red', attrs=['bold']), end=" ", flush=True);
          time.sleep(0.15);
       
       print("\n");
 
-      for i in colorChristmas:
+      for i in colorChristmas: #for loop change. i will be each character that makes up "Christmas".
          print(colored(i, color='green', attrs=['bold']), end=" ", flush=True);
          time.sleep(0.15)
       
