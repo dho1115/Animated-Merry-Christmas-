@@ -1,8 +1,6 @@
 if __name__ == '__main__':
-   import folder.versions, folder.functions;
-
-   availableVersions = folder.functions.availableVersions();
-   availableVersionsMap = dict(one='MerryChristmas_v1', two='MerryChristmas_v2', three='MerryChristmas_v3', four='MerryChristmas_v4')
+   import folder.versions, folder.functions
+   from folder.dictionaries import availableVersions, availableVersionsMap
 
    # #Uncomment to show ALL current versions.
    # for key, value in folder.functions.availableVersions().items():
