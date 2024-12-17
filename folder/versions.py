@@ -45,18 +45,20 @@ def MerryChristmas_v2(delay:float=0.3):
 
 def MerryChristmas_v3():
    import pyfiglet;
+
    init()
    try:
       #fonts = 'block', 'broadway', 'hollywood'
       merry = pyfiglet.figlet_format("Merry ");
       christmas = pyfiglet.figlet_format("Christmas!!!");
+
       colorMerry = colored(merry, color='red', attrs=['bold'])
       colorChristmas = colored(christmas, color='green', attrs=['bold'])
 
       return colorMerry + colorChristmas;
    except Exception:
       print(Exception);
-      return "Something went wrong."
+      return "Oops... there appears to be a problem."
 
 def MerryChristmas_v4(delay=0.57, repeat=5):
    init()
