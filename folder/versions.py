@@ -58,7 +58,7 @@ def MerryChristmas_v3():
       print(Exception);
       return "Something went wrong."
 
-def MerryChristmas_v4(delay=0.33, repeat=5):
+def MerryChristmas_v4(delay=0.57, repeat=5):
    init()
    text = "   Merry Christmas"
    coloredText = colored(text, color='red', attrs=['bold'])
