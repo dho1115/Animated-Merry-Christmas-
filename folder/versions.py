@@ -33,7 +33,7 @@ def MerryChristmas_v2(delay:float=0.3):
 
       for i in phrase:
          greeting+=i;
-         print(greeting, end='\r');
+         print(greeting, end='\r', flush=True);
          time.sleep(delay)
 
       
