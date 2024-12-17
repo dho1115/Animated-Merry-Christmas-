@@ -55,7 +55,19 @@ def MerryChristmas_v3():
       colorMerry = colored(merry, color='red', attrs=['bold'])
       colorChristmas = colored(christmas, color='green', attrs=['bold'])
 
-      return colorMerry + colorChristmas;
+      for i in colorMerry:
+         print(colored(i, color='red', attrs=['bold']), end=" ", flush=True);
+         time.sleep(0.15);
+      
+      print("\n");
+
+      for i in colorChristmas:
+         print(colored(i, color='green', attrs=['bold']), end=" ", flush=True);
+         time.sleep(0.15)
+      
+      return "I hope your holidays are not as crappy as this animation result. Please email me at my fake email address, holidaygreetings@holidaygreetings.com for more animated greetings that are (hopefully) NOT as bad as this.";
+
+      # return colorMerry + colorChristmas; #uncomment this (and comment the above) to see version two that looks better (but is not animated).
    except Exception:
       print(Exception);
       return "Oops... there appears to be a problem."
